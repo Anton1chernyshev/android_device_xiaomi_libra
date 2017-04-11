@@ -457,4 +457,7 @@
     <!-- Button illumination -->
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
     <integer name="config_buttonBrightnessSettingDefault">153</integer>
+
+    <!-- Enable blur support -->
+    <bool name="config_uiBlurEnabled">true</bool>
 </resources>
