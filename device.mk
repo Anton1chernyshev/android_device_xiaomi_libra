@@ -242,6 +242,9 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+PRODUCT_PACKAGES += \
+    qti-telephony-common
+
 # Power
 PRODUCT_PACKAGES += \
     power.msm8992
