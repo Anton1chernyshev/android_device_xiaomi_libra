@@ -35,4 +35,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- When true, show RSSI instead of SNR. -->
     <bool name="config_showRsrpSignalLevelforLTE">true</bool>
+
+    <!-- When true, show the AutoBrightness checkbox -->
+    <bool name="config_show_auto_brightness">true</bool>
 </resources>
