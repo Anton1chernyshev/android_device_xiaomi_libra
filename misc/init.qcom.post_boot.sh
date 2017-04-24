@@ -811,20 +811,16 @@ case "$target" in
 
         # configure governor settings for little cluster
         echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
+        echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
         echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
-        echo 99 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
-        echo 60000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
-        echo 1248000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
-        echo 480000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_slack
+        echo 19000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
+        echo 90 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+        echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
+        echo 960000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
         echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
-        echo "80 460800:68 600000:82 672000:72 787200:92 864000:83 960000:99 1248000:75 1440000:99" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost
-        echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis
+        echo 80 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
+        echo 40000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
+        echo 80000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis
         echo 384000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
         # online CPU4
         echo 1 > /sys/devices/system/cpu/cpu4/online
@@ -832,19 +828,16 @@ case "$target" in
         echo 960000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
         # configure governor settings for big cluster
         echo "interactive" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
+        echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load
         echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_migration_notif
-        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay
+        echo 19000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay
         echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
-        echo 30000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
-        echo 960000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
+        echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
+        echo 1248000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
         echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
-        echo "74 768000:73 864000:64 960000:80 1248000:61 1344000:69 1440000:64 1536000:74 1632000:69 1689600:67 1824000:99" > /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads
-        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time
-        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/boost
-        echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/align_windows
-        echo 60000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/max_freq_hysteresis
-        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/boostpulse_duration
+        echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads
+        echo 40000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time
+        echo 80000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/max_freq_hysteresis
         echo 384000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
         # restore A57's max
         cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_max_freq > /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
@@ -872,9 +865,11 @@ case "$target" in
         # Restore CPU 4 max freq from msm_performance
         echo "4:4294967295 5:4294967295" > /sys/module/msm_performance/parameters/cpu_max_freq
         # input boost configuration
-        echo 1 > /sys/module/cpu_boost/parameters/input_boost_enabled
+        echo 0:1248000 > /sys/module/cpu_boost/parameters/input_boost_freq
+        echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
         # core_ctl module
         echo 0 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+        echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
         echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
         echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
         echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
@@ -1246,12 +1241,6 @@ case "$target" in
         echo $oem_version > /sys/devices/soc0/image_crm_version
         ;;
 esac
-
-# Set I/O scheduler to noop
-echo "noop" > /sys/block/mmcblk0/queue/scheduler
-
-# Set disk read ahead to 256kb
-echo 256 > /sys/block/mmcblk0/queue/read_ahead_kb
 
 # Enable QDSS agent if QDSS feature is enabled
 # on a non-commercial build.  This allows QDSS
