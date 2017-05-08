@@ -119,6 +119,7 @@ TARGET_USES_QCOM_MM_AUDIO := true
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
+TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8992
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BOARD_HAS_QCA_BT_ROME := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/xiaomi/libra/bluetooth
@@ -140,7 +141,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x02000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-6.x-kernel/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9-kernel/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -198,17 +199,8 @@ BOARD_USES_QC_TIME_SERVICES := true
 # CNE and DPM
 BOARD_USES_QCNE := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS := \
-    hardware/cyanogen/cmhw \
-    device/xiaomi/libra/cmhw
-
 # dt2w
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/double_tap_enable"
-
-# Ril
-TARGET_RIL_VARIANT := caf
 
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true

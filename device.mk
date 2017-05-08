@@ -4,8 +4,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/libra/libra-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/xiaomi/libra/overlay
 
-DEVICE_PACKAGE_OVERLAYS += vendor/hnt/overlay
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
@@ -145,6 +143,10 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     services-ext
 
+# Doze
+PRODUCT_PACKAGES += \
+    DozeService
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     e2fsck \
@@ -164,10 +166,6 @@ PRODUCT_PACKAGES += \
     sap.conf \
     xtwifi.conf
 
-# Doze
-PRODUCT_PACKAGES += \
-    LibraDoze
-
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8992 \
@@ -182,14 +180,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
-
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
 
 # Keystore
 PRODUCT_PACKAGES += \
@@ -242,8 +232,8 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
-PRODUCT_PACKAGES += \
-    qti-telephony-common
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
 
 # Power
 PRODUCT_PACKAGES += \
