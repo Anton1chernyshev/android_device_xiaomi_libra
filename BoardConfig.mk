@@ -202,6 +202,9 @@ BOARD_USES_QCNE := true
 # dt2w
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/double_tap_enable"
 
+# Ril
+TARGET_RIL_VARIANT := caf
+
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true
 
