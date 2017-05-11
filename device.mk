@@ -187,10 +187,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
-
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8992
