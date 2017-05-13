@@ -311,3 +311,7 @@ PRODUCT_PACKAGES += \
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \
     ro.secure=0
+
+# OTA
+PRODUCT_PACKAGES += \
+    LineageOTA
