@@ -307,6 +307,6 @@ ro.sys.fw.dex2oat_thread_count=4
 
 # OTA
 ro.ota.systemname=LineageOS
-ro.ota.version=LineageOS_20170512
-ro.ota.manifest=https://github.com/xiaomi-dev-playground/CMUpdater-API/blob/cm-14.1/libra/ota.xml
+ro.ota.version=LineageOS_20170513
+ro.ota.manifest=https://raw.githubusercontent.com/xiaomi-dev-playground/CMUpdater-API/cm-14.1/libra/ota.xml
 
