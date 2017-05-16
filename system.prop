@@ -243,7 +243,7 @@ ro.sys.oosenhance.enable=true
 ro.sys.oosenhance.timer=20000
 
 # button jack mode & switch
-persist.sys.button_jack_profile=volume
+persist.sys.button_jack_profile=music
 persist.sys.button_jack_switch=0
 
 #property to set fingerpirnt vendor
