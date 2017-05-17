@@ -1,0 +1,7 @@
+#
+# Wired Headset key layout
+#
+
+key 115 MEDIA_NEXT
+key 226 HEADSETHOOK
+key 582 MEDIA_PREVIOUS
