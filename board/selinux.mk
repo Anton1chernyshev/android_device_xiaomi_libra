@@ -1,0 +1,5 @@
+BOARD_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy
+
+BOARD_SECCOMP_POLICY += \
+    $(DEVICE_PATH)/seccomp
