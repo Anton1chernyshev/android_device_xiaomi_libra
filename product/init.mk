@@ -16,3 +16,22 @@ PRODUCT_PACKAGES += \
 # bin scripts
 PRODUCT_PACKAGES += \
     sensor_select.sh
+
+# etc scripts
+PRODUCT_PACKAGES += \
+    hsic.control.bt.sh \
+    init.ath3k.bt.sh \
+    init.crda.sh \
+    init.qcom.audio.sh \
+    init.qcom.bt.sh \
+    init.qcom.coex.sh \
+    init.qcom.debug.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.fm.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.uicc.sh \
+    init.qcom.wifi.sh \
+    qca6234-service.sh \
+    usf_post_boot.sh \
+    usf_settings.sh
