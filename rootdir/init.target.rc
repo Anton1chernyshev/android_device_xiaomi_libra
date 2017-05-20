@@ -342,7 +342,7 @@ service mlipayservice /system/bin/mlipayd
 
 # power save
 on property:sys.perf.profile=0
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "powersave"
     write /sys/devices/system/cpu/cpu4/core_ctl/min_cpus 0
     write /sys/devices/system/cpu/cpu4/core_ctl/max_cpus 0
     write /sys/module/cpu_boost/parameters/input_boost_enabled 0
