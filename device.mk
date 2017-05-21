@@ -33,7 +33,7 @@ include $(LOCAL_PATH)/product/*.mk
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Call the proprietary setup
-$(call inherit-product-if-exists, vendor/xiaomi/libra/libra-vendor.mk)
+$(call inherit-product, vendor/xiaomi/libra/libra-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
