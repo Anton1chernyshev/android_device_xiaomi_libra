@@ -1,4 +1,4 @@
 PRODUCT_PACKAGES += \
-    LibraDoze \
+    DozeService \
     LineageOTA \
     qti-telephony-common
