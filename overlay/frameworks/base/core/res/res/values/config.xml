@@ -445,8 +445,6 @@
          provisioning, availability etc -->
     <bool name="config_carrier_vt_available">true</bool>
 
-    <bool name="config_allowAllRotations">true</bool>
-
     <!-- Disable Manual Network Selection in Global Mode -->
     <string translatable="false" name="prohibit_manual_network_selection_in_gobal_mode">true</string>
 
