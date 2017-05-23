@@ -448,10 +448,6 @@
     <!-- Disable Manual Network Selection in Global Mode -->
     <string translatable="false" name="prohibit_manual_network_selection_in_gobal_mode">true</string>
 
-    <!-- Control whether Night display is available. This should only be enabled on devices
-         with HWC 2.0 or higher. -->
-    <bool name="config_nightDisplayAvailable">true</bool>
-
     <!-- The RadioAccessFamilies supported by the device.
          Empty is viewed as "all".  Only used on devices which
          don't support RIL_REQUEST_GET_RADIO_CAPABILITY
