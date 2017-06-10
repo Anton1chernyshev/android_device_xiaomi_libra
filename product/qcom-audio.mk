@@ -4,6 +4,7 @@ ACDB_TARGET ?= Forte
 PRODUCT_PACKAGES += \
     audiod \
     libaudio-resampler \
+    libbthost_if \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
