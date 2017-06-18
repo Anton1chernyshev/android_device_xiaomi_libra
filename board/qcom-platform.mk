@@ -18,4 +18,4 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 PROTOBUF_SUPPORTED := true
 
 TARGET_USE_SDCLANG := true
-SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
+SDCLANG_PATH := prebuilts/clang/host/linux-x86/3.9/bin
