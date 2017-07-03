@@ -2,6 +2,9 @@
 PRODUCT_PACKAGES += \
     libshim_media
 
+PRODUCT_PACKAGES += \
+    CustomTiles
+
 # misc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/modem/Diag.cfg:system/etc/modem/Diag.cfg \
