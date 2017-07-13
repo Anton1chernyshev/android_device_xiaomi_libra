@@ -671,6 +671,8 @@ vendor/lib64/libmm-als.so
 # QMI
 bin/irsc_util
 etc/permissions/qti_permissions.xml
+-lib/libqminvapi.so
+-lib64/libqminvapi.so
 -vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 -vendor/lib/libdsutils.so
