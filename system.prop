@@ -305,8 +305,3 @@ sys.io.scheduler=bfq
 # Dexopt
 ro.sys.fw.dex2oat_thread_count=4
 
-# OTA
-ro.ota.systemname=LineageOS
-ro.ota.version=2017061901
-ro.ota.manifest=https://raw.githubusercontent.com/xiaomi-dev-playground/CMUpdater-API/cm-14.1/libra/ota.xml
-
