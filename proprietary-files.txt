@@ -768,7 +768,6 @@ vendor/lib64/libvoice-svc.so
 
 # Sensors
 bin/sensors.qcom
-etc/sensors/sensor_def_qcomdev.conf
 lib/hw/activity_recognition.msm8994.so
 lib/hw/sensors.lsm6db0.so
 lib64/hw/sensors.lsm6db0.so
