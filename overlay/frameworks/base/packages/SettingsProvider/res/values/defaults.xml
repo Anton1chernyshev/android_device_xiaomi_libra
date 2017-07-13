@@ -23,4 +23,7 @@
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
 
+    <!-- Set the notification pulse to be on by default. -->
+    <bool name="def_notification_pulse">true</bool>
+
 </resources>
