@@ -20,5 +20,4 @@ DEVICE_PATH := device/xiaomi/libra
 include $(DEVICE_PATH)/PlatformConfig.mk
 include $(DEVICE_PATH)/board/*.mk
 
-
 -include vendor/xiaomi/libra/BoardConfigVendor.mk

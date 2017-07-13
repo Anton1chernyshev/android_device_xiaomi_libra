@@ -25,7 +25,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
 DEVICE_PACKAGE_OVERLAYS := \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    vendor/kenga/overlay
 
 include $(LOCAL_PATH)/product/*.mk
 
