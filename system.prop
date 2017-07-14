@@ -29,8 +29,6 @@ persist.demo.hdmirotationlock=false
 ro.sf.lcd_density=480
 ro.hdmi.enable=true
 persist.speaker.prot.enable=true
-#enable dirac effect for speaker
-persist.audio.dirac.speaker=true
 #0 is default(30 min)
 persist.spkr.cal.duration=0
 qcom.hw.aac.encoder=true
