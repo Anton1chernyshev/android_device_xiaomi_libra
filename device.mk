@@ -24,9 +24,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # A list of dpis to select prebuilt apk, in precedence order.
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
-DEVICE_PACKAGE_OVERLAYS := \
+DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    vendor/kenga/overlay
 
 include $(LOCAL_PATH)/product/*.mk
 
