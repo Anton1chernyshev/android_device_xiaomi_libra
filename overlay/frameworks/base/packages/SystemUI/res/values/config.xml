@@ -43,6 +43,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Doze: can we assume the pickup sensor includes a proximity check? -->
     <bool name="doze_pickup_performs_proximity_check">true</bool>
 
-    <!-- When true, show RSSI instead of SNR. -->
-    <bool name="config_showRsrpSignalLevelforLTE">true</bool>
 </resources>
