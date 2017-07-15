@@ -14,11 +14,7 @@ vendor/lib/libfastcvopt.so
 vendor/lib64/libadsprpc.so
 
 # Audio
-lib/soundfx/libdirac.so
-lib/libDiracAPI_SHARED.so
-vendor/etc/audio_effects.conf
 vendor/etc/audio_output_policy.conf
-vendor/etc/diracmobile.config
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -673,6 +669,7 @@ bin/irsc_util
 etc/permissions/qti_permissions.xml
 -lib/libqminvapi.so
 -lib64/libqminvapi.so
+lib64/libprotobuf-cpp-full.so
 -vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 -vendor/lib/libdsutils.so
