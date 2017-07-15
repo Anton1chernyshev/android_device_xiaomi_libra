@@ -33,5 +33,4 @@ PRODUCT_PACKAGES += \
     init.qcom.uicc.sh \
     init.qcom.wifi.sh \
     qca6234-service.sh \
-    usf_post_boot.sh \
     usf_settings.sh
