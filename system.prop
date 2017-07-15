@@ -95,11 +95,6 @@ ro.sys.display.support=23
 # System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=1
 
-#
-# System props for bluetooth
-# System prop to turn on hfp client
-bluetooth.hfp.client=1
-
 # Set Bluetooth transport
 # initialization timeout
 bluetooth.enable_timeout_ms=12000
@@ -220,6 +215,16 @@ audio_hal.period_size=192
 ro.btconfig.if=uart
 ro.btconfig.dev=/dev/ttyHS0
 ro.btconfig.vendor=qcom
+ro.qualcomm.bluetooth.opp=true
+ro.qualcomm.bluetooth.hfp=true
+ro.qualcomm.bluetooth.hsp=true
+ro.qualcomm.bluetooth.pbap=true
+ro.qualcomm.bluetooth.ftp=true
+ro.qualcomm.bluetooth.nap=true
+ro.bluetooth.sap=true
+ro.bluetooth.dun=true
+ro.qualcomm.bluetooth.map=true
+ro.bluetooth.hfp.ver=1.6
 ro.btconfig.chip=QCA6164
 keyguard.no_require_sim=true
 persist.radio.apm_sim_not_pwdn=1
