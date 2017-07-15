@@ -13,8 +13,3 @@ TARGET_PER_MGR_ENABLED := true
 
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
-
-# Added to indicate that protobuf-c is supported in this build
-PROTOBUF_SUPPORTED := true
-
-TARGET_USE_SDCLANG := true
