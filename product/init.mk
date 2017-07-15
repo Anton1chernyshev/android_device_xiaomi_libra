@@ -2,7 +2,6 @@
 PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.qcom.early_boot.sh	\
-    init.qcom.factory.sh \
     init.qcom.sh \
     init.qcom.syspart_fixup.sh \
     init.qcom.rc \
