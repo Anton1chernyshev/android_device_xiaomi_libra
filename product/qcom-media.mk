@@ -16,9 +16,3 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw \
     libstagefright_soft_flacdec
-
-#PRODUCT_PACKAGES += \
-#    libdashplayer \
-#    libextmedia_jni \
-#    qcmediaplayer \
-#    libqcmediaplayer

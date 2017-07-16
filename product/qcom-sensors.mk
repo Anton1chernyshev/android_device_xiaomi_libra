@@ -6,4 +6,4 @@ PRODUCT_COPY_FILES += \
 
 # Multi HAL configuration file
 PRODUCT_COPY_FILES += \
-    device/xiaomi/libra/configs/hals.conf:system/etc/sensors/hals.conf
+    $(LOCAL_PATH)/configs/hals.conf:system/etc/sensors/hals.conf
