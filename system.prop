@@ -174,13 +174,8 @@ ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
 
-# enable navigation bar
-
 #enable voice path for PCM VoIP by default
 use.voice.path.for.pcm.voip=true
-
-# Create zram disk
-#ro.config.zram=true
 
 # Enable manual network selection function and distinguish 2G/3G/4G
 persist.radio.rat_on=combine
