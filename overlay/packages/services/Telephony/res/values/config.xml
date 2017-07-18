@@ -23,9 +23,6 @@
          successfully placing the OTA call -->
     <integer name="OtaShowListeningScreen">1</integer>
 
-    <!-- Flag indicating if the phone is a world phone -->
-    <bool name="world_phone">true</bool>
-
     <!-- Flag indicating if dtmf tone type is enabled -->
     <bool name="dtmf_type_enabled">true</bool>
 
@@ -43,7 +40,7 @@
     <!-- Disable data before manual PLMN scan if true-->
     <!--<bool name="config_disable_data_manual_plmn">true</bool>-->
 
-    <!-- Show cdma auto network mode in (glabal) roaming -->
+    <!-- Show cdma auto network mode in (global) roaming -->
     <bool name="config_show_cdma" translatable="false">true</bool>
 
     <!-- Show enabled lte option for lte device -->
