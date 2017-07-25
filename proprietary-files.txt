@@ -501,7 +501,6 @@ etc/wfdconfigsink.xml
 -bin/dpmd
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
-etc/mcd_default.conf
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
 -framework/com.qti.dpmframework.jar
