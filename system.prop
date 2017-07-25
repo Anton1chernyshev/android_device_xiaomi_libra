@@ -229,8 +229,6 @@ persist.radio.apm_sim_not_pwdn=1
 #
 # custom properties
 #
-# Google Assistant
-ro.opa.eligible_device=true
 
 # GPS
 persist.gps.qc_nlp_in_use=1
