@@ -223,21 +223,3 @@ ro.bluetooth.hfp.ver=1.6
 ro.btconfig.chip=QCA6164
 keyguard.no_require_sim=true
 persist.radio.apm_sim_not_pwdn=1
-
-#
-# ADDITIONAL_BUILD_PROPERTIES
-#
-# custom properties
-#
-
-# GPS
-persist.gps.qc_nlp_in_use=1
-persist.loc.nlp_name=com.qualcomm.location
-ro.gps.agps_provider=1
-
-# IO scheduler
-sys.io.scheduler=bfq
-
-# Dexopt
-ro.sys.fw.dex2oat_thread_count=4
-
