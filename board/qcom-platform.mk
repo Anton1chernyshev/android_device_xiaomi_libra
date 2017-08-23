@@ -17,6 +17,3 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm
 
-# Ram optimization
-MALLOC_SVELTE := true
-
